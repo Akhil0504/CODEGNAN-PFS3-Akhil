@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cristiano Ronaldo</h1>
+<div id="'header">
+    <div class="container">
+        <nav>
+            <img src="images/ronaldo.png.jpeg" class="ronaldo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Position</a></li>
+                <li><a href="#">Achievements</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Professional footballer</p>
+            <h1>Hi, I'm<span> Cristiano Ronaldo</span><br>from portugal</h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="images/ronaldo2.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum asperiores ipsa rerum ut reiciendis ab eum omnis corrupti aut, eius ea commodi nisi vitae accusamus in possimus odit adipisci architecto!</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" oneclick="opentab('goals')">Goals</p>
+                    <p class="tab-links" oneclick="opentab('records')">Records</p>
+                </div>
+                <div class="tab-contents active-tab" id="goals">
+                    <ul>
+                        <li><span>All time goals</span><br>893</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="records">
+                    <ul>
+                        <li><span>All time Record breaker</span><br>Top goal scorer in 4 different leagues</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Position</h1>
+        <div class="service-list">
+            <div>
+                <h2>Center Forward</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sunt magnam consectetur porro quia labore omnis obcaecati laudantium, amet vero ullam sit hic dolore consequatur minus explicabo autem molestias deserunt.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Left Wing Forward</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sunt magnam consectetur porro quia labore omnis obcaecati laudantium, amet vero ullam sit hic dolore consequatur minus explicabo autem molestias deserunt.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Right Wing Forward</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sunt magnam consectetur porro quia labore omnis obcaecati laudantium, amet vero ullam sit hic dolore consequatur minus explicabo autem molestias deserunt.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Achievements </h1>
+        <div class="work">
+            <img src="images/ronaldo3.jpeg">
+            <div class="layer">
+                <h3>5 time Ballondor winner</h3>
+                <p>I am the 5 time ballon dor winner because I was the best.</p>
+                <a href="#"></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/ronaldo 4.jpeg">
+            <div class="layer">
+                <h3>4 time Golden Boot winner</h3>
+                <p>I am the 4 time Golden boot winner because I was the best.</p>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p>Contact@gmail.com</p>
+                <p>9703437684</p>
+                <div class="social-icons">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink  of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+</body>
+</html>
